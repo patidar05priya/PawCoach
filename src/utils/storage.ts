@@ -14,3 +14,17 @@ export function loadDog(): Dog | null {
 export function saveDog(dog: Dog): void {
   localStorage.setItem(DOG_KEY, JSON.stringify(dog));
 }
+
+const THEME_KEY = 'pawcoach.theme';
+
+export function loadThemeId(): string | null {
+  try {
+    return localStorage.getItem(THEME_KEY);
+  } catch {
+    return null;
+  }
+}
+
+export function saveThemeId(id: string): void {
+  localStorage.setItem(THEME_KEY, id);
+}
