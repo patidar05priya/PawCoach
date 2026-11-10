@@ -19,3 +19,126 @@ main {
   margin: 0 auto;
   padding: 24px;
 }
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #222;
+}
+
+.nav {
+  display: flex;
+  gap: 16px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #666;
+}
+
+.nav a.active {
+  color: #e07a2f;
+  font-weight: 600;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 400px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 600;
+}
+
+input,
+select {
+  font: inherit;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #e07a2f;
+  border-color: transparent;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+.row input {
+  flex: 1;
+}
+
+.error {
+  color: #c62828;
+  font-weight: 400;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #e07a2f;
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #c96a24;
+}
+
+.button.secondary {
+  background: #fff;
+  color: #e07a2f;
+  border: 1px solid #e07a2f;
+}
+
+/* Card and empty state */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  max-width: 400px;
+}
+
+.card h2 {
+  margin: 0 0 4px;
+}
+
+.empty {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.big-emoji {
+  font-size: 3rem;
+  margin: 0;
+}
